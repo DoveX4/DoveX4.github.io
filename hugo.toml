@@ -1,4 +1,4 @@
-baseURL = 'http://localhost:1313/'
+baseURL = 'https://dovex4.github.io/'
 languageCode = 'zh-cn'
 title = '胶带的个人门户'
 theme = "PaperMod"
