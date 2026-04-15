@@ -5,7 +5,7 @@ theme = "PaperMod"
 
 [params.homeInfoParams]
     Title = "你好，我是胶带 👋"
-    Content = "正在探索电磁计算、纯粹数学与数字生活的 INFJ。"
+    Content = "正在探索有意思的各种知识。"
 
 [[params.socialIcons]]
     name = "github"
