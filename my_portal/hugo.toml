@@ -1,0 +1,15 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'zh-cn'
+title = '胶带的个人门户'
+theme = "PaperMod"
+
+[params.homeInfoParams]
+    Title = "你好，我是胶带 👋"
+    Content = "正在探索电磁计算、纯粹数学与数字生活的 INFJ。"
+
+[[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/DoveX4"
+[[params.socialIcons]]
+    name = "zhihu"
+    url = "https://www.zhihu.com/people/aloneperson"
