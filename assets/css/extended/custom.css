@@ -1,0 +1,98 @@
+/* --- 1. 全局正文：建议用宋体或衬线体 --- */
+body {
+    font-family: 'Noto Serif SC', serif;
+}
+
+.dark body {
+    background-color: #111111 !important;
+    background-image: radial-gradient(at 0% 0%, rgba(30, 41, 59, 0.7) 0, transparent 50%) !important;
+}
+
+/* --- 2. 标题：可以保持一致或用黑体 --- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 700;
+}
+
+/* --- 3. 代码专属：只给代码块应用 Source Code Pro --- */
+code, pre, kbd, samp, .has-jax {
+    font-family: 'Source Code Pro', monospace !important;
+}
+
+/* --- 4. Callout 内部微调 --- */
+.callout-content {
+    font-family: 'Noto Serif SC', serif;
+}
+
+/* 头像增强：增加精致的圆环和悬停效果 */
+.profile_inner img {
+    padding: 5px;
+    border: 2px solid var(--primary); /* 使用主题色作为边框 */
+    background: var(--code-bg);
+    transition: transform 0.3s ease; /* 增加悬停动画 */
+}
+
+.profile_inner img:hover {
+    transform: scale(1.05); /* 悬停时轻微旋转放大，增加生动感 */
+}
+
+/* 标题加粗加宽：让你的名字 Jia Yansen 更醒目 */
+.profile_inner h1 {
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+/* 按钮美化 */
+.social-icons {
+    margin-bottom: 25px;
+}
+
+.buttons .button {
+    background: transparent !important;
+    border: 1.5px solid var(--primary) !important;
+    color: var(--primary) !important;
+    border-radius: 30px !important; /* 胶囊形状 */
+    padding: 8px 20px !important;
+    transition: all 0.2s ease !important;
+    font-weight: 600;
+}
+
+.buttons .button:hover {
+    background: var(--primary) !important;
+    color: var(--theme) !important; /* 悬停时反色 */
+    transform: translateY(-3px); /* 向上轻微漂浮 */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* 标签基础样式 */
+.post-tags a, .terms-tags a {
+    display: inline-block;
+    margin: 5px 8px 5px 0;
+    padding: 4px 14px !important; /* 增加左右内边距，形成胶囊状 */
+    background: var(--code-bg) !important;
+    color: var(--secondary) !important;
+    border: 1.5px solid transparent; /* 预留边框位置 */
+    border-radius: 20px !important; /* 圆角胶囊 */
+    font-size: 13px !important;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out !important;
+    text-decoration: none !important;
+}
+
+/* 鼠标悬停效果：边框变色并轻微浮动 */
+.post-tags a:hover, .terms-tags a:hover {
+    background: transparent !important;
+    color: var(--primary) !important;
+    border-color: var(--primary); /* 悬停时显示主题色边框 */
+    transform: translateY(-2px); /* 向上轻微位移 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* 标签前的 # 号处理（可选：如果你想去掉它或者美化它） */
+.post-tags a::before {
+    content: "# ";
+    opacity: 0.5;
+    margin-right: 2px;
+}

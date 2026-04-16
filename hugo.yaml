@@ -55,6 +55,28 @@ outputs:
     - JSON
 
 params:
+  profileMode:
+    enabled: true # 必须设为 true
+    title: "你好👋 我是胶带"
+    subtitle: |
+      这是一个终身学习者的博客
+
+      正在探索各种有趣的知识😊
+    imageUrl: "avatar.png" # 头像路径
+    imageTitle: "Avatar"
+    imageWidth: 240
+    imageHeight: 240
+    buttons:
+      - name: "我的博客"
+        url: "posts"
+      - name: "关于我"
+        url: "about"
+
+#  homeInfoParams: 
+#    Title: "你好，我是胶带👋"
+#    Content: |
+#      正在探索各种有趣的知识
+
   fuseOpts:
     isCaseSensitive: false # 是否大小写敏感
     shouldSort: true # 是否排序
