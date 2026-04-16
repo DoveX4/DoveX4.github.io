@@ -66,7 +66,14 @@ params:
     keys: ["title", "permalink", "summary", "content"]
     includeMatches: true
 
-
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  # 核心配置：确保没有把 tags 排除在外
+  showFullTextContent: false
+  displayStats: true
+  # 检查这里是否误选了隐藏
+  hideMeta: false
 
 # comments
   comments: true
@@ -86,4 +93,24 @@ params:
     crosslogin: "anonymous"
     dataLoading: "lazy"
 
+  assets:
+    favicon: "favicon.png"
+    favicon16x16: "favicon.png"
+    favicon32x32: "favicon.png"
+    apple_touch_icon: "favicon.png"
+    safari_pinned_tab: "favicon.png"
+    disableHLJS: true
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # 可以 unsafe，有些 html 标签和样式可能需要
+  highlight:
+    anchorLineNos: false # 不要给行号设置锚标
+    codeFences: true # 代码围栏
+    noClasses: false # TODO: 不知道干啥的，暂时没必要了解，不影响展示
+    lineNos: true # 代码行
+    lineNumbersInTable: false # 不要设置成 true，否则如果文章开头是代码的话，摘要会由一大堆数字(即代码行号)开头文章
+    # 这里设置 style 没用，得自己加 css
+    # style: "github-dark"
+    # style: monokai
