@@ -1,0 +1,6 @@
+/* 网站端居中图片 */
+img[src*="#pic_center"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

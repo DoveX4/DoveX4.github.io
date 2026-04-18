@@ -10,7 +10,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/404.html">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.613a56f1dac4cd24a3a21870a9334590f0890b7f6aa4d037dea188eeb99a6f06.css" integrity="sha256-YTpW8drEzSSjohhwqTNFkPCJC39qpNA33qGI7rmabwY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bbcb196fd335ce938f7bc5dcd28dc191233ac1bf1f9d3f5b0add77e2cf3f6d1f.css" integrity="sha256-u8sZb9M1zpOPe8Xc0o3BkSM6wb8fnT9bCt134s8/bR8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon.png">
@@ -144,12 +144,12 @@ code.has-jax {
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/categories/" title="分类">
+                <a href="http://localhost:1313/categories/" title="Categories">
                     <span>分类</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="标签">
+                <a href="http://localhost:1313/tags/" title="Tags">
                     <span>标签</span>
                 </a>
             </li>
@@ -185,7 +185,12 @@ code.has-jax {
         <polyline points="17 11 12 6 7 11"></polyline>
         <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
-</a>
+</a><script>
+  document.querySelectorAll("main").forEach((main) => {
+    main.innerHTML = main.innerHTML.replace(/\[\[(.*?)\]\]/g, '<a href="/posts/$1">$1</a>');
+  });
+</script>
+
 
 <script>
     let menu = document.getElementById('menu');

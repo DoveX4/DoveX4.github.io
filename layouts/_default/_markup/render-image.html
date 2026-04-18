@@ -1,0 +1,11 @@
+{{- /* layouts/_default/_markup/render-image.html */ -}}
+{{- $src := .Destination -}}
+{{- $alt := .Text -}}
+{{- $title := .Title -}}
+
+{{- /* 如果图片路径是 "attachments/" 开头且没有前导斜杠，则自动加上 /posts/attachments/ 前缀 */ -}}
+{{- if and (hasPrefix $src "attachments/") (not (hasPrefix $src "/")) -}}
+  {{- $src = printf "/posts/%s" $src -}}
+{{- end -}}
+
+<img src="{{ $src | safeURL }}" alt="{{ $alt }}" {{ with $title }} title="{{ . }}"{{ end }} />

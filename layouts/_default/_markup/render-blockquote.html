@@ -1,0 +1,49 @@
+{{- /* layouts/_default/_markup/render-blockquote.html */ -}}
+{{- /* 如果是标准提醒块 */ -}}
+{{- if eq .Type "alert" -}}
+    {{- /* 获取提醒类型（如 note, warning） */ -}}
+    {{- $alertType := .AlertType | default "note" -}}
+    {{- /* 获取提醒标题，如果为空则用类型名首字母大写作为默认值 */ -}}
+    {{- $alertTitle := .AlertTitle | default ($alertType | humanize) -}}
+    {{- /* 可选：获取折叠标识（+、- 或空） */ -}}
+    {{- $alertSign := .AlertSign | default "" -}}
+
+    {{- /* 如果是可折叠的提醒块，使用 <details> 和 <summary> 标签 */ -}}
+    {{- if eq $alertSign "+" -}}
+        <details class="obsidian-callout" data-callout="{{ $alertType }}" open>
+            <summary class="callout-title">
+                <div class="callout-icon"></div>
+                <div class="callout-title-inner">{{ $alertTitle | safeHTML }}</div>
+            </summary>
+            <div class="callout-content">
+                {{ .Text }}
+            </div>
+        </details>
+    {{- else if eq $alertSign "-" -}}
+        <details class="obsidian-callout" data-callout="{{ $alertType }}">
+            <summary class="callout-title">
+                <div class="callout-icon"></div>
+                <div class="callout-title-inner">{{ $alertTitle | safeHTML }}</div>
+            </summary>
+            <div class="callout-content">
+                {{ .Text }}
+            </div>
+        </details>
+    {{- else -}}
+        {{- /* 不可折叠的普通提醒块 */ -}}
+        <div class="obsidian-callout" data-callout="{{ $alertType }}">
+            <div class="callout-title">
+                <div class="callout-icon"></div>
+                <div class="callout-title-inner">{{ $alertTitle | safeHTML }}</div>
+            </div>
+            <div class="callout-content">
+                {{ .Text }}
+            </div>
+        </div>
+    {{- end -}}
+{{- else -}}
+    {{- /* 如果不是提醒块，按普通引用渲染 */ -}}
+    <blockquote>
+        {{ .Text }}
+    </blockquote>
+{{- end -}}

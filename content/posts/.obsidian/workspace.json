@@ -1,0 +1,219 @@
+{
+  "main": {
+    "id": "5cdbe9ba2b8b54ba",
+    "type": "split",
+    "children": [
+      {
+        "id": "382cf0a540ec6dc2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f9825ea9e97a157b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PaperNotes/传输线传输矩阵法（TLTMM）.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "传输线传输矩阵法（TLTMM）"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e3d891c458765885",
+    "type": "split",
+    "children": [
+      {
+        "id": "8c7b10214a7db4c7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "acb23dbc84e0111e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "0a52f51229fe0c04",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "74fd4a497fc8a440",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 357.5
+  },
+  "right": {
+    "id": "b707f58bce28ee35",
+    "type": "split",
+    "children": [
+      {
+        "id": "21a6fef9e4a552ec",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "043076e2d36437ef",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "essay/练习1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "练习1 的反向链接列表"
+            }
+          },
+          {
+            "id": "4a94745e95a06af7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "essay/练习1.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "练习1 的出链列表"
+            }
+          },
+          {
+            "id": "3e458adb26322093",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "a5b25a3f4a414075",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "essay/练习1.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "练习1 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false,
+      "zhihu:Open Zhihu side view": false
+    }
+  },
+  "active": "f9825ea9e97a157b",
+  "lastOpenFiles": [
+    "PaperNotes/方法：用MLP预测单层S参数，再用A矩阵将其级联计算多层响应.md",
+    "PaperNotes/Nicolson-Ross-Weir反演法.md",
+    "PaperNotes/传输线传输矩阵法（TLTMM）.md",
+    "math/LaTeX/公式.md",
+    "math/analysis/证明序列极限存在或为某值的方法.md",
+    "math/analysis/证明序列极限不存在的方法.md",
+    "math/analysis/构造闭区间套的方法.md",
+    "informationEngineering/Computer Organization and Architecture：Designing for Performance_Williams Stallings/CHAPTER 4 - Cache Memory.md",
+    "informationEngineering/Computer Organization and Architecture：Designing for Performance_Williams Stallings/CHAPTER 3 - A Top-Level View of Computer Function and Interconnection.md",
+    "informationEngineering/Communication System_Simon Haykin/Chapter 0 Background and Preview.md",
+    "informationEngineering/自适应滤波器原理/对自适应信道均衡中引入延迟问题的一些讨论.md",
+    "informationEngineering/统计信号处理基础——估计与检测理论（卷I、卷II合集）_Steven M. Kay/卷1_第2章_最小方差无偏估计.md",
+    "informationEngineering/统计信号处理基础——估计与检测理论（卷I、卷II合集）_Steven M. Kay/卷1_第1章_引言.md",
+    "informationEngineering/模拟集成电路设计精粹_Willy Sansen/Ch.1 Comparison of MOST and Bipolar transistor models.md",
+    "informationEngineering/模拟集成电路培训笔记/3等效电路建模.md",
+    "informationEngineering/电波传播与信道/CHAP 4 - 障碍物的影响.md",
+    "attachments/two-level memory.png",
+    "essay/练习1.md",
+    "philosophy/充足理由律的四重根/《充足理由律的四重根》论证结构.md",
+    "YSYX/C语言复习.md",
+    "informationEngineering/Computer Organization and Architecture：Designing for Performance_Williams Stallings/Review Questions & Problems.md",
+    "informationEngineering/Computer Organization and Architecture：Designing for Performance_Williams Stallings/CHAPTER 1 - Basic Concepts and Computer Evolution.md",
+    "informationEngineering/电波传播与信道/太阳闪烁分析用到的公式.md",
+    "attachments/菲涅尔积分表.png",
+    "_index.md",
+    "attachments/Pasted image 20260314152027.png",
+    "attachments/P4.5.png",
+    "attachments/memory hierachy.png",
+    "attachments/computer components from top level.png",
+    "attachments/A Top-Down View of a Computer.png",
+    "informationEngineering/Computer Organization and Architecture：Designing for Performance_Williams Stallings/Key Points.md",
+    "attachments/0.1.1.png",
+    "attachments/Pasted image 20260109235822.png",
+    "attachments/Pasted image 20260109235418.png",
+    "informationEngineering/信息通信网络概论/教材名.md",
+    "informationEngineering/嵌入式Linux操作系统原理/attachments/Linux系统进程调度策略研究_张斌.pdf",
+    "informationEngineering/嵌入式Linux操作系统原理/attachments/一种基于谐波抑制网络的小型化宽带整流电路  (2)(2).pdf",
+    "informationEngineering/模拟集成电路培训笔记/2025.5功率放大器/基于45nmSOI工艺的32GHz宽带毫米波功率放大器设计.pdf",
+    "informationEngineering/模拟集成电路培训笔记/2025.4电感提参/Accurate_Systematic_Model-Parameter_Extraction_for_On-Chip_Spiral_Inductors.pdf",
+    "informationEngineering/模拟集成电路培训笔记/2025.4电感提参/毫米波集成电路片上传输线和螺旋电感建模提参研究_刘念宏.pdf",
+    "informationEngineering/模拟集成电路培训笔记/2025.4电感提参/硅基射频螺旋电感模型研究与应用_余明珠.pdf",
+    "attachments",
+    "informationEngineering/电波传播与信道/CHAP 4 - 障碍物的影响"
+  ]
+}

@@ -1,0 +1,5 @@
+<script>
+  document.querySelectorAll("main").forEach((main) => {
+    main.innerHTML = main.innerHTML.replace(/\[\[(.*?)\]\]/g, '<a href="/posts/$1">$1</a>');
+  });
+</script>
