@@ -137,7 +137,7 @@ markup:
       attribute:
         block: true
       wrapStandAloneImageWithinParagraph: false
-      
+
   highlight:
     anchorLineNos: false # 不要给行号设置锚标
     codeFences: true # 代码围栏
@@ -155,3 +155,5 @@ module:
     # 保留原有的 content 挂载（通常 Hugo 会自动处理，但显式写出更安全）
     - source: 'content'
       target: 'content'
+    - source: 'static'
+      target: 'static'
