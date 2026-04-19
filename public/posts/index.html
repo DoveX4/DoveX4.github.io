@@ -10,7 +10,7 @@
 <meta name="description" content="文库 - 胶带的博客">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.bbcb196fd335ce938f7bc5dcd28dc191233ac1bf1f9d3f5b0add77e2cf3f6d1f.css" integrity="sha256-u8sZb9M1zpOPe8Xc0o3BkSM6wb8fnT9bCt134s8/bR8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a0b62e497cedb4780022fcda48bbfd9497ccd2f480ad3630979e6abf9daf37f6.css" integrity="sha256-oLYuSXzttHgAIvzaSLv9lJfM0vSArTYwl55qv52vN/Y=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon.png">
@@ -68,41 +68,29 @@
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
-<script type="text/javascript"
-        async
-        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\[\[','\]\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});
 
-MathJax.Hub.Queue(function() {
-    
-    
-    
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      tags: 'ams'   
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
     }
-});
+  };
 </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" id="MathJax-script" async></script>
 
-<style>
-code.has-jax {
-    font: inherit;
-    font-size: 100%;
-    background: inherit;
-    border: inherit;
-    color: #515151;
-}
-</style>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: { 
+      extensions: ["AMSmath.js", "AMSsymbols.js"]   // 确保这两行存在
+    }
+  });
+</script>
 
 </head>
 <body class="list" id="top">
@@ -145,12 +133,12 @@ code.has-jax {
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/categories/" title="Categories">
+                <a href="http://localhost:1313/categories/" title="分类">
                     <span>分类</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="http://localhost:1313/tags/" title="标签">
                     <span>标签</span>
                 </a>
             </li>
@@ -173,32 +161,6 @@ code.has-jax {
     文库
   </h1>
 </header>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">证明序列极限存在或为某值的方法
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>1 根据极限的定义证明 1.1 $n$的有理分式序列 有理分式的极限很易看出，即：（1）如果分子最高次高于分母最高次，极限为无穷大；（2）如果分子最高次低于分母最高次，极限为0；（3）如果分子、分母最高次相同，极限为最高次系数之比。 以序列极限有限为例，证明这一结论的核心是（1）放大分子，放小分母（找到一个比原式大的新式，让此式小于$\varepsilon$求解）；（2）将低次项都放成最高次（便于解出对应的$N$）。 典型题如下：
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-04-18 00:00:00 +0000 UTC'>2026年4月18日</span>&nbsp;·&nbsp;<span>12 分钟</span></footer>
-  <a class="entry-link" aria-label="post link to 证明序列极限存在或为某值的方法" href="http://localhost:1313/posts/math/analysis/%E8%AF%81%E6%98%8E%E5%BA%8F%E5%88%97%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E6%88%96%E4%B8%BA%E6%9F%90%E5%80%BC%E7%9A%84%E6%96%B9%E6%B3%95/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">证明序列极限不存在的方法
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>1 根据极限的定义证明 根据极限定义证明序列极限不存在的难点是，直接破坏极限的定义，只能证明某个数不是序列的极限，而不能说明序列不存在极限。由于不存在一一检验所有数的方法，所以通常采取反证法证明极限不存在。以下题为例：
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-04-16 00:00:00 +0000 UTC'>2026年4月16日</span>&nbsp;·&nbsp;<span>2 分钟</span></footer>
-  <a class="entry-link" aria-label="post link to 证明序列极限不存在的方法" href="http://localhost:1313/posts/math/analysis/%E8%AF%81%E6%98%8E%E5%BA%8F%E5%88%97%E6%9E%81%E9%99%90%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E6%96%B9%E6%B3%95/"></a>
-</article>
 
 <article class="post-entry"> 
   <header class="entry-header">
@@ -229,6 +191,19 @@ code.has-jax {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">证明序列极限存在或为某值的方法
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1 根据极限的定义证明 1.1 $n$的有理分式序列 有理分式的极限很易看出，即：（1）如果分子最高次高于分母最高次，极限为无穷大；（2）如果分子最高次低于分母最高次，极限为0；（3）如果分子、分母最高次相同，极限为最高次系数之比。 以序列极限有限为例，证明这一结论的核心是（1）放大分子，放小分母（找到一个比原式大的新式，让此式小于$\varepsilon$求解）；（2）将低次项都放成最高次（便于解出对应的$N$）。 典型题如下：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-18 00:00:00 +0000 UTC'>2026年3月18日</span>&nbsp;·&nbsp;<span>12 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 证明序列极限存在或为某值的方法" href="http://localhost:1313/posts/math/analysis/%E8%AF%81%E6%98%8E%E5%BA%8F%E5%88%97%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E6%88%96%E4%B8%BA%E6%9F%90%E5%80%BC%E7%9A%84%E6%96%B9%E6%B3%95/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">论文笔记 | NRW反演法
     </h2>
   </header>
@@ -243,12 +218,25 @@ code.has-jax {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">证明序列极限不存在的方法
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1 根据极限的定义证明 根据极限定义证明序列极限不存在的难点是，直接破坏极限的定义，只能证明某个数不是序列的极限，而不能说明序列不存在极限。由于不存在一一检验所有数的方法，所以通常采取反证法证明极限不存在。以下题为例：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-16 00:00:00 +0000 UTC'>2026年3月16日</span>&nbsp;·&nbsp;<span>2 分钟</span></footer>
+  <a class="entry-link" aria-label="post link to 证明序列极限不存在的方法" href="http://localhost:1313/posts/math/analysis/%E8%AF%81%E6%98%8E%E5%BA%8F%E5%88%97%E6%9E%81%E9%99%90%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E6%96%B9%E6%B3%95/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">论文笔记 | 传输线传输矩阵法（TLTMM）
     </h2>
   </header>
   <div class="entry-content">
     <p>本文为论文[1]的阅读笔记
-核心思想 对于上图所示的多层介质结构，将其等效为下图所示的多层传输线模型： 对于每一层和每一个分界面，都可以定义层间传输矩阵$L$和分界面不连续矩阵$I$：$$\begin{bmatrix} E_{(\ell&#43;1)}^&#43; \ E_{(\ell&#43;1)}^-\end{bmatrix}=L_{(\ell&#43;1)}\begin{bmatrix} {E’}^&#43;{(\ell&#43;1)} \ {E’}{(\ell&#43;1)}^-\end{bmatrix},\quad \begin{bmatrix} E_{(\ell&#43;1)}^&#43; \ E_{(\ell&#43;1)}^- \end{bmatrix}=I_{{(\ell&#43;1)}\ell} \begin{bmatrix} E_{\ell}^&#43; \ E_{\ell}^- \end{bmatrix}$$ 其中等式两侧变量的定义如下图所示： 我们发现，如此定义的$L$和$I$和微波网络理论中的矩阵$[A]$完全一致。
+核心思想 对于上图所示的多层介质结构，将其等效为下图所示的多层传输线模型： 对于每一层和每一个分界面，都可以定义层间传输矩阵$L$和分界面不连续矩阵$I$：
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2026-03-14 00:00:00 +0000 UTC'>2026年3月14日</span>&nbsp;·&nbsp;<span>2 分钟</span></footer>
@@ -262,7 +250,7 @@ code.has-jax {
   </header>
   <div class="entry-content">
     <p>1 二分法 这是构造闭区间套最常用最简单的方法，以下面的题目为例：
-1.1设函数$f(x)$在$(a,b)$内有定义，且$\forall \xi \in (a,b), \exists \delta&gt;0, \text{ s.t. } x\in (\xi-\delta,\xi&#43;\delta)\cap(a,b)$时有： （1）当$x&lt;\xi$时，$f(x)&lt;f(\xi)$；（2）当$x&gt;\xi$时，$f(x)&gt;f(\xi)$ 证明：$f(x)$在$(a,b)$内严格递增
+1.1设函数$f(x)$在$(a,b)$内有定义，且$\forall \xi \in (a,b), \exists \delta&gt;0, \text{ s.t. } x\in (\xi-\delta,\xi&#43;\delta)\cap(a,b)$时有：
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2026-03-12 00:00:00 +0000 UTC'>2026年3月12日</span>&nbsp;·&nbsp;<span>3 分钟</span></footer>

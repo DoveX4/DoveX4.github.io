@@ -124,10 +124,27 @@ params:
     disableHLJS: true
 
 markup:
+  tableOfContents:
+    plain: true
   goldmark:
     renderer:
       unsafe: true # 可以 unsafe，有些 html 标签和样式可能需要
+      hardLineBreak: true # 允许 markdown 中的换行符被渲染成 <br>，否则需要在行末加两个空格才会换行
     extentions:
+      typographer: false # 关闭一些特殊符号的自动转换，例如引号、破折号等
+      passthrough:
+        enable: true # 允许 HTML 标签直接通过，不会被转义
+        delimiters:
+          block: 
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+          - - $
+            - $
       extras:
         mark: true
         insert: true
@@ -157,3 +174,8 @@ module:
       target: 'content'
     - source: 'static'
       target: 'static'
+
+security:
+  exec:
+    allow:
+      - '^pandoc$'

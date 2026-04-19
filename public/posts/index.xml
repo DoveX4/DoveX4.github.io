@@ -7,27 +7,8 @@
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <copyright>©2026 胶带的博客</copyright>
-    <lastBuildDate>Sat, 18 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2026 22:34:15 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>证明序列极限存在或为某值的方法</title>
-      <link>http://localhost:1313/posts/math/analysis/%E8%AF%81%E6%98%8E%E5%BA%8F%E5%88%97%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E6%88%96%E4%B8%BA%E6%9F%90%E5%80%BC%E7%9A%84%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/math/analysis/%E8%AF%81%E6%98%8E%E5%BA%8F%E5%88%97%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E6%88%96%E4%B8%BA%E6%9F%90%E5%80%BC%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
-      <description>&lt;h1 id=&#34;1-根据极限的定义证明&#34;&gt;1 根据极限的定义证明&lt;/h1&gt;
-&lt;h2 id=&#34;11-n的有理分式序列&#34;&gt;1.1 $n$的有理分式序列&lt;/h2&gt;
-&lt;p&gt;有理分式的极限很易看出，即：（1）如果分子最高次高于分母最高次，极限为无穷大；（2）如果分子最高次低于分母最高次，极限为0；（3）如果分子、分母最高次相同，极限为最高次系数之比。
-以序列极限有限为例，证明这一结论的核心是（1）放大分子，放小分母（找到一个比原式大的新式，让此式小于$\varepsilon$求解）；（2）将低次项都放成最高次（便于解出对应的$N$）。
-典型题如下：&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>证明序列极限不存在的方法</title>
-      <link>http://localhost:1313/posts/math/analysis/%E8%AF%81%E6%98%8E%E5%BA%8F%E5%88%97%E6%9E%81%E9%99%90%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/math/analysis/%E8%AF%81%E6%98%8E%E5%BA%8F%E5%88%97%E6%9E%81%E9%99%90%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
-      <description>&lt;h1 id=&#34;1-根据极限的定义证明&#34;&gt;1 根据极限的定义证明&lt;/h1&gt;
-&lt;p&gt;根据极限定义证明序列极限不存在的难点是，直接破坏极限的定义，只能证明某个数不是序列的极限，而不能说明序列不存在极限。由于不存在一一检验所有数的方法，所以通常采取反证法证明极限不存在。以下题为例：&lt;/p&gt;</description>
-    </item>
     <item>
       <title>练习1</title>
       <link>http://localhost:1313/posts/essay/%E7%BB%83%E4%B9%A01/</link>
@@ -46,6 +27,17 @@
 FSR是一种用FSS和吸波材料实现的一种电磁功能材料，中文名为“频率选择吸波体”。通过FSS和吸波材料的堆叠，能够实现传输特定频率的电磁波并吸收其他频段电磁波的功能&lt;/p&gt;</description>
     </item>
     <item>
+      <title>证明序列极限存在或为某值的方法</title>
+      <link>http://localhost:1313/posts/math/analysis/%E8%AF%81%E6%98%8E%E5%BA%8F%E5%88%97%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E6%88%96%E4%B8%BA%E6%9F%90%E5%80%BC%E7%9A%84%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/math/analysis/%E8%AF%81%E6%98%8E%E5%BA%8F%E5%88%97%E6%9E%81%E9%99%90%E5%AD%98%E5%9C%A8%E6%88%96%E4%B8%BA%E6%9F%90%E5%80%BC%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;h1 id=&#34;1-根据极限的定义证明&#34;&gt;1 根据极限的定义证明&lt;/h1&gt;
+&lt;h2 id=&#34;11-n的有理分式序列&#34;&gt;1.1 $n$的有理分式序列&lt;/h2&gt;
+&lt;p&gt;有理分式的极限很易看出，即：（1）如果分子最高次高于分母最高次，极限为无穷大；（2）如果分子最高次低于分母最高次，极限为0；（3）如果分子、分母最高次相同，极限为最高次系数之比。
+以序列极限有限为例，证明这一结论的核心是（1）放大分子，放小分母（找到一个比原式大的新式，让此式小于$\varepsilon$求解）；（2）将低次项都放成最高次（便于解出对应的$N$）。
+典型题如下：&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>论文笔记 | NRW反演法</title>
       <link>http://localhost:1313/posts/papernotes/nicolson-ross-weir%E5%8F%8D%E6%BC%94%E6%B3%95/</link>
       <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
@@ -61,6 +53,14 @@ $$z=e^{-j\omega d\sqrt{\mu\varepsilon}}=e^{-j\frac{\omega}{c_0}d\sqrt{\mu_r \var
 表示电磁波在介质中的传播因子。由于同轴线中的传播主模为TEM模，所以式中没有截止波数项。&lt;/p&gt;</description>
     </item>
     <item>
+      <title>证明序列极限不存在的方法</title>
+      <link>http://localhost:1313/posts/math/analysis/%E8%AF%81%E6%98%8E%E5%BA%8F%E5%88%97%E6%9E%81%E9%99%90%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/math/analysis/%E8%AF%81%E6%98%8E%E5%BA%8F%E5%88%97%E6%9E%81%E9%99%90%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;h1 id=&#34;1-根据极限的定义证明&#34;&gt;1 根据极限的定义证明&lt;/h1&gt;
+&lt;p&gt;根据极限定义证明序列极限不存在的难点是，直接破坏极限的定义，只能证明某个数不是序列的极限，而不能说明序列不存在极限。由于不存在一一检验所有数的方法，所以通常采取反证法证明极限不存在。以下题为例：&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>论文笔记 | 传输线传输矩阵法（TLTMM）</title>
       <link>http://localhost:1313/posts/papernotes/%E4%BC%A0%E8%BE%93%E7%BA%BF%E4%BC%A0%E8%BE%93%E7%9F%A9%E9%98%B5%E6%B3%95tltmm/</link>
       <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
@@ -72,11 +72,7 @@ $$z=e^{-j\omega d\sqrt{\mu\varepsilon}}=e^{-j\frac{\omega}{c_0}d\sqrt{\mu_r \var
 对于上图所示的多层介质结构，将其等效为下图所示的多层传输线模型：
 &lt;img src=&#34;http://localhost:1313/posts/attachments/Pasted%20image%2020260314152128.png&#34; alt=&#34;&#34;  /&gt;
 
-对于每一层和每一个分界面，都可以定义层间传输矩阵$L$和分界面不连续矩阵$I$：$$\begin{bmatrix} E_{(\ell+1)}^+  \ E_{(\ell+1)}^-\end{bmatrix}=L_{(\ell+1)}\begin{bmatrix} {E&amp;rsquo;}^+&lt;em&gt;{(\ell+1)} \ {E&amp;rsquo;}&lt;/em&gt;{(\ell+1)}^-\end{bmatrix},\quad \begin{bmatrix} E_{(\ell+1)}^+  \ E_{(\ell+1)}^- \end{bmatrix}=I_{{(\ell+1)}\ell} \begin{bmatrix} E_{\ell}^+  \ E_{\ell}^- \end{bmatrix}$$
-其中等式两侧变量的定义如下图所示：
-&lt;img src=&#34;http://localhost:1313/posts/attachments/Pasted%20image%2020260314152925.png&#34; alt=&#34;&#34;  /&gt;
-
-我们发现，如此定义的$L$和$I$和微波网络理论中的矩阵$[A]$完全一致。&lt;/p&gt;</description>
+对于每一层和每一个分界面，都可以定义层间传输矩阵$L$和分界面不连续矩阵$I$：&lt;/p&gt;</description>
     </item>
     <item>
       <title>构造闭区间套的方法</title>
@@ -91,9 +87,7 @@ $$z=e^{-j\omega d\sqrt{\mu\varepsilon}}=e^{-j\frac{\omega}{c_0}d\sqrt{\mu_r \var
                 &lt;div class=&#34;callout-title-inner&#34;&gt;1.1&lt;/div&gt;
             &lt;/div&gt;
             &lt;div class=&#34;callout-content&#34;&gt;
-                &lt;p&gt;设函数$f(x)$在$(a,b)$内有定义，且$\forall \xi \in (a,b), \exists \delta&amp;gt;0, \text{ s.t. } x\in (\xi-\delta,\xi+\delta)\cap(a,b)$时有：
-（1）当$x&amp;lt;\xi$时，$f(x)&amp;lt;f(\xi)$；（2）当$x&amp;gt;\xi$时，$f(x)&amp;gt;f(\xi)$
-证明：$f(x)$在$(a,b)$内严格递增&lt;/p&gt;</description>
+                &lt;p&gt;设函数$f(x)$在$(a,b)$内有定义，且$\forall \xi \in (a,b), \exists \delta&amp;gt;0, \text{ s.t. } x\in (\xi-\delta,\xi+\delta)\cap(a,b)$时有：&lt;/p&gt;</description>
     </item>
     <item>
       <title>《充足理由律的四重根》笔记 | 论证结构</title>
