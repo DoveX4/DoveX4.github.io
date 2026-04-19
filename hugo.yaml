@@ -55,6 +55,7 @@ outputs:
     - JSON
 
 params:
+  math: true
   profileMode:
     enabled: true # 必须设为 true
     title: "你好👋 我是胶带"
